@@ -37,6 +37,13 @@ running
 
 located in the lib/ directory.
 
+== Technology
+
+On the server side, pekan relies on Ruby and Sinatra, the sqlite3
+database is accessed via DataMapper and the exchange of data is
+performed by sending JSON REST requests back and forth via the Ruby
+json gem. On the client-side, dojo backs anything Javascript.
+
 
 Copyright (c) 2011
 * {Martin Bosslet}[https://github.com/emboss]
