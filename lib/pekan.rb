@@ -4,6 +4,8 @@ require 'json'
 require 'pp'
 require_relative 'models'
 
+DONE = 'DONE'
+
 get '/' do
   erb :index
 end
@@ -17,7 +19,10 @@ get '/tasks/' do
         id: task.id,
         title: task.title,
         description: task.description,
-        column: task.column
+        column: task.column,
+        created: task.created,
+        closed: task.closed,
+        archived: task.archived
     }
   end
   content_type :json
@@ -30,7 +35,9 @@ post '/tasks/' do
   {
     title: data["title"],
     description: data["description"],
-    column: data["column"]
+    column: data["column"],
+    created: Time.new,
+    archived: data["archived"]
   })
   status 201
   headers({ "Location" => "/tasks/#{task.id}"})
@@ -43,6 +50,12 @@ put '/tasks/:id' do
   task.title = data["title"]
   task.description = data["description"]
   task.column = data["column"]
+  if task.column == DONE
+    task.closed = Time.new
+  else
+    task.closed = nil
+  end
+  task.archived = data["archived"]
   unless task.save
     status 500
   end

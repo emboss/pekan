@@ -1,2 +1,7 @@
-=== 0.1.0 / 2011-03-18 [emboss]
+=== 0.1.0 / 2011-03-22 [emboss]
+* Added infrastructure for archiving tasks.
+* Added task creation and closure date.
+* Slight UI refactoring.
+
+ === 0.1.0 / 2011-03-18 [emboss]
 * Birth

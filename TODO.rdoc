@@ -1,43 +1,9 @@
-== OpenSSL::ASN1::Template
+== pekan
+* Archive UI
+* Comments
+* onmouseover description => overflow-y: auto
+* Comments UI
+* Statistics
+* "Projects/Categories"
 
-=== C parsing/encoding
-* Implement the parse/decode facilities in C
-
-Skip the intermediate format of ASN.1 objects,
-parse and encode directly from template to DER
-and vice versa.
-
-=== asn1_sequence_of, asn1_set_of
-
-Currently the allowed sizes are generally (0..inf). It
-should also be possible to restrict this to e.g. (4..6) etc.
-
-=== Set order
-
-* Take care of SET and SET OF ordering
-
-=== Tests 
-
-* TBD
-
-=== String encoders
-
-Introduce encoders that force a certain encoding that is specific to the string type?
-
-== Functionality
-
-=== Certificate
-* PKey from SubjectPublicKeyInfo
-* Certificate creation: extensions etc
-
-=== SignedData
-* Verify on global level
-* add_signature on global level
-* More CMS attributes
-
-=== SignerInfo
-* Verify using certificate
-
-=== Key Agreement
-* RDoc
 

@@ -11,7 +11,7 @@ div#header {
     height: 10%;
 }
 
-div#header, div#add-task {
+div#header {
     background-color: black;
     color: white;
 }
@@ -23,20 +23,20 @@ div#header div.title {
     padding-top: 0.5em;
 }
 
-div#header div.title, div#add-task {
+div#header div.title, div#menu {
     display: inline-block;
 }
 
-div#add-task {
-    margin-left: 5em;
+div#menu {
+    margin-left: 3em;
 }
 
-
-div#add-task span.add {
-    margin-left:1em;
-    font-family: sans-serif;
-    font-size: 90%;
-    border: 1px solid #333;
+div#menu div.menu-item {
+    display: inline-block;
+    margin-left: 2em;
+    border-left: 1px solid white;
+    padding-left: 0.5em;
+    text-decoration: underline;
     cursor: pointer;
 }
 
