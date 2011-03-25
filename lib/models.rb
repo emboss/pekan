@@ -6,12 +6,22 @@ class Task
   include DataMapper::Resource
 
   property :id,          Serial
-  property :title,       String
+  property :title,       String,  required: true
   property :description, Text
-  property :column,      String
+  property :column,      String,  required: true
   property :created,     DateTime
   property :closed,      DateTime
-  property :archived,    Boolean
+  property :archived,    Boolean, required: true
+
+  has 1, :project
+end
+
+class Project
+  include DataMapper::Resource
+
+  property :id,   Serial
+  property :name, String, key: true
+
 end
 
 DataMapper.finalize

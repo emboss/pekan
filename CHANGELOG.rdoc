@@ -1,4 +1,14 @@
-=== 0.1.0 / 2011-03-22 [emboss]
+=== 0.1.0 / 2011-03-25 [emboss]
+* Adding administrational infrastructure.
+
+Added "Project" table for supporting different
+categories of tasks. Added logic that first
+redirects to a setup page if application is
+not yet set up correctly. Began implementation
+of an Admin section for configuring the
+application.
+
+ === 0.1.0 / 2011-03-22 [emboss]
 * Added infrastructure for archiving tasks.
 * Added task creation and closure date.
 * Slight UI refactoring.
