@@ -18,6 +18,12 @@ CREATE TABLE projects
     name     VARCHAR(15) UNIQUE NOT NULL
 );
 
+CREATE TABLE counters
+(
+    project_id       INTEGER NOT NULL,
+    value            INTEGER NOT NULL,
+    FOREIGN KEY(project_id) REFERENCES projects(id)
+);
 
 
 

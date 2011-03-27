@@ -1,4 +1,7 @@
-=== 0.1.0 / 2011-03-25 [emboss]
+=== 0.1.0 / 2011-03-27 [emboss]
+* Added counter table.
+
+ === 0.1.0 / 2011-03-25 [emboss]
 * Adding administrational infrastructure.
 
 Added "Project" table for supporting different

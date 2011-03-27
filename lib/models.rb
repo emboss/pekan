@@ -21,7 +21,14 @@ class Project
 
   property :id,   Serial
   property :name, String, key: true
+end
 
+class Counter
+  include DataMapper::Resource
+
+  property :value,       Integer, required: true
+
+  belongs_to :project, key: true
 end
 
 DataMapper.finalize
