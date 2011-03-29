@@ -1,11 +1,11 @@
 DONE = 'DONE'
 
 get '/taskboard/' do
-  erb :index
+  erb :taskboard
 end
 
 get '/tasks/' do
-  result = Task.all
+  result = Task.all(archived: false)
   ary = result.map do |task|
     {
       id: task.id,
