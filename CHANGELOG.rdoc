@@ -1,4 +1,7 @@
 === 0.1.0 / 2011-04-01 [emboss]
+* Added waiting dialog.
+
+ === 0.1.0 / 2011-04-01 [emboss]
 * Implemented project support.
 
 === 0.1.0 / 2011-03-29 [emboss]
