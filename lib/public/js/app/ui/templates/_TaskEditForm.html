@@ -1,0 +1,22 @@
+<div class="edit-task-container">
+    <div class="title-row">
+        <label for="projectsContainer">
+            Project:
+        </label>
+        <div dojoAttachPoint="projectsContainer"></div>
+        <div class="description-row">
+            <label for="description">
+                Description:
+            </label>
+            <textarea name="description" rows="5" dojoAttachPoint="descriptionNode"></textarea>
+        </div>
+    </div>
+    <div class="button-row">
+        <button dojoAttachEvent="onclick:onSubmit">
+            OK
+        </button>
+        <button dojoAttachEvent="onclick:onCancel">
+            Cancel
+        </button>
+    </div>
+</div>

@@ -13,14 +13,17 @@ class Task
   property :closed,      DateTime
   property :archived,    Boolean, required: true
 
-  has 1, :project
+  belongs_to :project
 end
 
 class Project
   include DataMapper::Resource
 
   property :id,   Serial
-  property :name, String, key: true
+  property :name, String
+
+  has n, :tasks
+  has 1, :counter
 end
 
 class Counter

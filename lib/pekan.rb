@@ -6,6 +6,7 @@ require_relative 'task'
 require_relative 'administration'
 require_relative 'setup'
 require_relative 'project'
+require 'pp'
 
 get '/' do
   if Project.count == 0 and Task.count == 0
