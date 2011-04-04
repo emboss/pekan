@@ -1,0 +1,29 @@
+.pekan.dijitDialog .dijitDialogPaneContent
+{
+    text-align: center;
+}
+
+.pekan.dijitDialog .button-panel
+{
+    text-align: center;
+    padding-top: 1em;
+}
+
+.pekan.dijitDialog
+{
+    border: 1px solid black;
+}
+
+.pekan.dijitDialog .dijitDialogTitleBar
+{
+    background-color: black;
+    background-image: none;
+    color: white;
+}
+
+.pekan.dijitDialog .button-panel button {
+    background-color: black;
+    color: white;
+    width: 8em;
+}
+

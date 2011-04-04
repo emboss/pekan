@@ -4,7 +4,5 @@
 * onmouseover description => overflow-y: auto
 * Comments UI
 * Statistics
-* JavaScript error handling for Ajax calls
-* work with baseClass for custom widgets
 
 

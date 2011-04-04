@@ -1,4 +1,8 @@
-=== 0.1.0 / 2011-04-01 [emboss]
+=== 0.1.0 / 2011-04-04 [emboss]
+* Added generic waiting and error dialogs.
+* Implemented archiving support.
+
+  === 0.1.0 / 2011-04-01 [emboss]
 * Added waiting dialog.
 
  === 0.1.0 / 2011-04-01 [emboss]
